@@ -15,52 +15,85 @@ body{
     overflow: hidden;
 }
 .grid {
-    color:white;
     margin-top:5%;
     margin-left:5%;
 }
-.mark {
-    color : white;
-    opacity: 1;
-}
+
 .left-side {
     position: fixed;
     font-family: SegoeUI;
     font-size: 50px;
     font-weight: 600;
     text-align: left;
-    opacity: 0.1;
+    color :#fdfdfd3d; 
 }
-
 .left-side p {
     margin : 10px;  
+    
 }
+.no_mark{
+    color :#fdfdfd3d; 
+}
+.mark {
+    color : white;
+}
+
+
 
 
 /* right side start */
 .right-side {
     display: grid;
-    grid-template-rows: 700px 700px 700px;
+    grid-template-rows: 700px 700px 700px 700px 700px;
 }
-.right-side-0{
+#right-side-0{
     font-family: SegoeUI;
     font-size: 45px;
     font-weight: 600;
     text-align : left;
 }
-.right-side-0 p{
+#right-side-0 p{
     margin : 10px;
     margin-left: 450px;
 }
 
-.right-side-1{
+#right-side-1{
     font-family: SegoeUI;
     font-size: 45px;
     font-weight: 600;
     text-align : left;
 }
-.right-side-1 p{
+#right-side-1 p{
     margin : 10px;
     margin-left: 450px;
 }
-
+#right-side-2{
+    font-family: SegoeUI;
+    font-size: 45px;
+    font-weight: 600;
+    text-align : left;
+}
+#right-side-2 p{
+    margin : 10px;
+    margin-left: 450px;
+}
+#right-side-3{
+    font-family: SegoeUI;
+    font-size: 45px;
+    font-weight: 600;
+    text-align : left;
+}
+#right-side-3 p{
+    margin : 10px;
+    margin-left: 450px;
+}
+#right-side-4{
+    font-family: SegoeUI;
+    font-size: 400px;
+    font-weight: 300;
+    text-align : left;
+}
+#right-side-4 p{
+    margin : 10px;
+    margin-left: 450px;
+}

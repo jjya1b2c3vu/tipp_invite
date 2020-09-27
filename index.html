@@ -11,10 +11,6 @@
         <source src="video.mp4" type="video/mp4">
         Sorry, your browser does not support HTML5 video.
     </video>
-        <!-- <video muted autoplay loop>
-            <source src="효과이미지_Trim.mp4" type="video/mp4">
-            <strong>Your browser does not support the video tag.</strong>
-        </video> -->
     
     <div class="front">
         <div class="grid1" >
@@ -30,9 +26,11 @@
         <div class="grid3">
             <div class="g3_text" id="DATE">DATE<br><a>SEP. 28</a></div>
             <div class="g3_text" id="ENTER_CODE">ENTER CODE<br>
-                <form><input id='pswd' type='password' maxlength='2'
-                    onKeydown="javascript:if(event.keyCode == 13)checkPswd();"/>
-                </form></div>
+                <form>
+                    <input type="password" id="pswd" maxlength="2"
+                     onkeydown="JavaScript:if(event.keyCode == 13)checkPswd();"/>
+                </form>
+            </div>
             <div class="g3_text" id="WITH">WITH<br><a id="TippCorp">Tipp Corp.</a></div>
         </div>
         <div><hr id="l3" align="center"></div>
