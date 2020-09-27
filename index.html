@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipp</title>
+    <link rel="stylesheet" type="text/css" href="css/new.css">
+</head>
+<body>
+    <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+        <source src="video.mp4" type="video/mp4">
+        Sorry, your browser does not support HTML5 video.
+    </video>
+        <!-- <video muted autoplay loop>
+            <source src="효과이미지_Trim.mp4" type="video/mp4">
+            <strong>Your browser does not support the video tag.</strong>
+        </video> -->
+    
+    <div class="front">
+        <div class="grid1" >
+            <div class="line"><hr id="l1" align="right"></div>
+            <div class="ClassOf20">ClassOf20</div>
+            <div class="line"><hr id="l2" align="left"></div>
+        </div>
+        <div class="grid2">
+            <div class="ambassadar">AMBASSADAR</div>
+            <div><hr id="l3" align="center"></div>
+        </div>
+        
+        <div class="grid3">
+            <div class="g3_text" id="DATE">DATE<br><a>SEP. 28</a></div>
+            <div class="g3_text" id="ENTER_CODE">ENTER CODE<br>
+                <form><input id='pswd' type='password' maxlength='2'
+                    onKeydown="javascript:if(event.keyCode == 13)checkPswd();"/>
+                </form></div>
+            <div class="g3_text" id="WITH">WITH<br><a id="TippCorp">Tipp Corp.</a></div>
+        </div>
+        <div><hr id="l3" align="center"></div>
+        
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+    padding: 0px; margin: 0px; 
+}
+
+#videobcg {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+}
+.grid {
+    color:white;
+    margin-top:5%;
+    margin-left:5%;
+}
+.mark {
+    color : white;
+    opacity: 1;
+}
+.left-side {
+    position: fixed;
+    font-family: SegoeUI;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: left;
+    opacity: 0.1;
+}
+
+.left-side p {
+    margin : 10px;  
+}
+
+
+/* right side start */
+.right-side {
+    display: grid;
+    grid-template-rows: 700px 700px 700px;
+}
+.right-side-0{
+    font-family: SegoeUI;
+    font-size: 45px;
+    font-weight: 600;
+    text-align : left;
+}
+.right-side-0 p{
+    margin : 10px;
+    margin-left: 450px;
+}
+
+.right-side-1{
+    font-family: SegoeUI;
+    font-size: 45px;
+    font-weight: 600;
+    text-align : left;
+}
+.right-side-1 p{
+    margin : 10px;
+    margin-left: 450px;
+}
+
