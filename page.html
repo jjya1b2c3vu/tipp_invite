@@ -15,51 +15,41 @@
     </video>
     <div class="grid">
         <div class="left-side">
-            <p id="myP0" class="no_mark">- Tipp ?</p><br>
-            <p id="myP1" class="no_mark">- 모집 대상/일정</p><br>
-            <p id="myP2" class="no_mark">- 활동 내용</p><br>
-            <p id="myP3" class="no_mark">- 활동 혜택</p><br>
-            <p id="myP4" class="no_mark">- Application Form</p><br>
+            <p id="myP0" ><button class="hide0">- Tipp ?</button></p><br>
+            <p id="myP1" ><button class="hide1">- 모집 대상/일정</button></p><br>
+            <p id="myP2" ><button class="hide2">- 활동 내용</button></p><br>
+            <p id="myP3" ><button class="hide3">- 활동 혜택</button></p><br>
+            <p id="myP4" ><button class="hide4">- Application Form</button></p><br>
         </div>
+
         <div class="right-side">
-        <div class="box"></div>
-        <div class="box">
-            <div id="right-side-0" >
+            <div class="box box0">
                 <p>Tipp은 영상 채팅 기반 소셜 Q&A 플랫폼입니다.</p><br>
                 <p>[커리어, 입시, 비즈니스, 엔터테인먼트 등] </p><br>
                 <p>다양한 분야의 전문가/경험자에게 </p><br>
                 <p>직접 대화하며 답을 찾을 수 있습니다.</p><br>
             </div>
-        </div>
-        <div class="box">
-            <div id="right-side-1" >
-                <p>커리어에 대한 궁금증이 있는 대학생</p><br>
-                <p>학생들의 고민을 들어줄 수 있는 대학생 </p><br>
-                <p>Tipp과 함께 2020년을 마무리할 대학생</p><br>   
+            <div class="box box1">
+                    <p>커리어에 대한 궁금증이 있는 대학생</p><br>
+                    <p>학생들의 고민을 들어줄 수 있는 대학생 </p><br>
+                    <p>Tipp과 함께 2020년을 마무리할 대학생</p><br>   
             </div>
-        </div>
-        <div class="box">
-            <div id="right-side-2" >
-                <p>Tipp(앱) 주 1회 접속</p><br>
-                <p>SNS 포스팅(게시물 총 3회, 스토리 주 1회)</p><br>
-                <p>마케팅 콘텐츠 촬영(VIDEO) 1회</p><br>
-                <p>report(과제물) 제출</p><br>
+            <div class="box box2">
+                    <p>Tipp(앱) 주 1회 접속</p><br>
+                    <p>SNS 포스팅(게시물 총 3회, 스토리 주 1회)</p><br>
+                    <p>마케팅 콘텐츠 촬영(VIDEO) 1회</p><br>
+                    <p>report(과제물) 제출</p><br>
             </div>
-        </div>
-        <div class="box">
-            <div id="right-side-3" >
-                <p>프로필 사진 촬영(시현하다)</p><br>
-                <p>단체(class) 사진 촬영 </p><br>
-                <p>활동비 지급</p><br>
-                <p>우수 활동자 시상 </p><br>
+            <div class="box box3">
+                    <p>프로필 사진 촬영(시현하다)</p><br>
+                    <p>단체(class) 사진 촬영 </p><br>
+                    <p>활동비 지급</p><br>
+                    <p>우수 활동자 시상 </p><br>
             </div>
-        </div>
-        <div class="box">
-            <div id="right-side-4" >
+            <div class="box box4">
                 <p>link</p>
             </div>
-        </div>
-        <div class="box" style="height: 1000px;"></div>
+
         </div>
     </div>
     
@@ -67,9 +57,55 @@
 
     
 </body>
+<script>
+    $( document ).ready( function() {
+    $( '.box0' ).hide();
+    $( '.box1' ).hide();
+    $( '.box2' ).hide();
+    $( '.box3' ).hide();
+    $( '.box4' ).hide();
+
+    $( 'button.hide0' ).click( function() { //0 
+        $( '.box0' ).show(1000);
+        $( '.box1' ).hide();
+        $( '.box2' ).hide();
+        $( '.box3' ).hide();
+        $( '.box4' ).hide(); 
+    });
+    $( 'button.hide1' ).click( function() { //1
+        $( '.box0' ).hide();
+        $( '.box1' ).show(1000);
+        $( '.box2' ).hide();
+        $( '.box3' ).hide();
+        $( '.box4' ).hide();
+    });
+    $( 'button.hide2' ).click( function() { //2
+        $( '.box0' ).hide();
+        $( '.box1' ).hide();
+        $( '.box2' ).show(1000);
+        $( '.box3' ).hide();
+        $( '.box4' ).hide();
+    });
+    $( 'button.hide3' ).click( function() { //3
+        $( '.box0' ).hide();
+        $( '.box1' ).hide();
+        $( '.box2' ).hide();
+        $( '.box3' ).show(1000);
+        $( '.box4' ).hide();
+    });
+    $( 'button.hide4' ).click( function() { //4
+        $( '.box0' ).hide();
+        $( '.box1' ).hide();
+        $( '.box2' ).hide();
+        $( '.box3' ).hide();
+        $( '.box4' ).show(1000);
+    });
     
-    <script src="js/page.js"></script>
-    <script type="text/javascript">
+   
+} );
+</script>
+    <!-- <script src="js/page.js"></script> -->
+    <!-- <script type="text/javascript">
         window.onload = function () {
             $(".box").each(function () {
                 // 개별적으로 Wheel 이벤트 적용
@@ -103,5 +139,5 @@
                 });
             });
         }
-    </script>
+    </script> -->
 </html>
