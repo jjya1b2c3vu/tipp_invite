@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/page.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
     <title>ClassOf20</title>
 </head>
 <body>
@@ -22,33 +22,44 @@
             <p id="myP4" class="no_mark">- Application Form</p><br>
         </div>
         <div class="right-side">
-        <div class="empty"></div>
-        <div id="right-side-0" >
-            <p>Tipp은 영상 채팅 기반 소셜 Q&A 플랫폼입니다.</p><br>
-            <p>[커리어, 입시, 비즈니스, 엔터테인먼트 등] </p><br>
-            <p>다양한 분야의 전문가/경험자에게 </p><br>
-            <p>직접 대화하며 답을 찾을 수 있습니다.</p><br>
+        <div class="box"></div>
+        <div class="box">
+            <div id="right-side-0" >
+                <p>Tipp은 영상 채팅 기반 소셜 Q&A 플랫폼입니다.</p><br>
+                <p>[커리어, 입시, 비즈니스, 엔터테인먼트 등] </p><br>
+                <p>다양한 분야의 전문가/경험자에게 </p><br>
+                <p>직접 대화하며 답을 찾을 수 있습니다.</p><br>
+            </div>
         </div>
-        <div id="right-side-1" >
-            <p>커리어에 대한 궁금증이 있는 대학생</p><br>
-            <p>학생들의 고민을 들어줄 수 있는 대학생 </p><br>
-            <p>Tipp과 함께 2020년을 마무리할 대학생</p><br>   
+        <div class="box">
+            <div id="right-side-1" >
+                <p>커리어에 대한 궁금증이 있는 대학생</p><br>
+                <p>학생들의 고민을 들어줄 수 있는 대학생 </p><br>
+                <p>Tipp과 함께 2020년을 마무리할 대학생</p><br>   
+            </div>
         </div>
-        <div id="right-side-2" >
-            <p>Tipp(앱) 주 1회 접속</p><br>
-            <p>SNS 포스팅(게시물 총 3회, 스토리 주 1회)</p><br>
-            <p>마케팅 콘텐츠 촬영(VIDEO) 1회</p><br>
-            <p>report(과제물) 제출</p><br>
+        <div class="box">
+            <div id="right-side-2" >
+                <p>Tipp(앱) 주 1회 접속</p><br>
+                <p>SNS 포스팅(게시물 총 3회, 스토리 주 1회)</p><br>
+                <p>마케팅 콘텐츠 촬영(VIDEO) 1회</p><br>
+                <p>report(과제물) 제출</p><br>
+            </div>
         </div>
-        <div id="right-side-3" >
-            <p>프로필 사진 촬영(시현하다)</p><br>
-            <p>단체(class) 사진 촬영 </p><br>
-            <p>활동비 지급</p><br>
-            <p>우수 활동자 시상 </p><br>
+        <div class="box">
+            <div id="right-side-3" >
+                <p>프로필 사진 촬영(시현하다)</p><br>
+                <p>단체(class) 사진 촬영 </p><br>
+                <p>활동비 지급</p><br>
+                <p>우수 활동자 시상 </p><br>
+            </div>
         </div>
-        <div id="right-side-4" >
-            <p>link</p>
+        <div class="box">
+            <div id="right-side-4" >
+                <p>link</p>
+            </div>
         </div>
+        <div class="box" style="height: 1000px;"></div>
         </div>
     </div>
     
@@ -59,4 +70,39 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script src="js/page.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            $(".box").each(function () {
+                // 개별적으로 Wheel 이벤트 적용
+                $(this).on("mousewheel DOMMouseScroll", function (e) {
+                    e.preventDefault();
+                    var delta = 0;
+                    if (!event) event = window.event;
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 120;
+                        if (window.opera) delta = -delta;
+                    } else if (event.detail) delta = -event.detail / 3;
+                    var moveTop = null;
+                    // 마우스휠을 위에서 아래로
+                    if (delta < 0) {
+                        if ($(this).next() != undefined) {
+                            moveTop = $(this).next().offset().top;
+                        }
+                    // 마우스휠을 아래에서 위로
+                    } else {
+                        if ($(this).prev() != undefined) {
+                            moveTop = $(this).prev().offset().top;
+                        }
+                    }
+                    // 화면 이동 0.8초(800)
+                    $("html,body").stop().animate({
+                        scrollTop: moveTop + 'px'
+                    }, {
+                        duration: 800, complete: function () {
+                        }
+                    });
+                });
+            });
+        }
+    </script>
 </html>

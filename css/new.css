@@ -7,7 +7,7 @@ body{
     top: 0px;
     left: 0px;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 90%;
     width: 100%;
     height: auto;
     z-index: -1;
@@ -16,7 +16,7 @@ body{
 
 .front {
     position: relative;
-    top: 0%; width: 100%;
+    margin-top: 12%; width: 100%;
 }
 .grid {
     display: grid;
@@ -25,22 +25,23 @@ body{
 .grid1 {
     margin-top : 5%; 
     display: grid;
-    grid-template-columns: 1fr 460px 1fr;
+    grid-template-columns: 1fr 18vw 1fr;
 }
 .line {
-    margin-top: 65px;
+    margin-top: 2.54vw;
 }
 #l1 {
     border: solid 4px white; width: 44.5%;
 }
 #l2 {
-    margin-left : 20px;
+    margin-left : 0.78vw;
     
     border: solid 4px white; width: 44.5%;
 }
 .ClassOf20 {
     font-family: SegoeUI;
-    font-size: 100px;
+    /* font-size: 100px; */
+    font-size: 3.9vw;
     font-weight: 300;
     font-stretch: normal;
     font-style: italic;
@@ -51,11 +52,12 @@ body{
 }
 
 .gird2{
-    margin-top :400px;
+    margin-top :15.625vw;
 }
 .ambassadar {
   font-family: SegoeUI;
-  font-size: 200px;
+  /* font-size: 200px;  */
+  font-size: 7.8vw;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -69,13 +71,13 @@ body{
 }
 .grid3 {
     display: grid;
-    grid-template-columns: auto 400px auto;
+    grid-template-columns: auto 15.625vw auto;
     margin-left: 10%;
     margin-right: 10%;
 }
 .g3_text {
     font-family: SegoeUI;
-    font-size: 30px;
+    font-size: 1.17vw;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -85,7 +87,7 @@ body{
     color: #ffffff;   
 }
 .grid3 a {
-    font-size: 50px;
+    font-size: 1.95vw;
     color: #ffffff;
 }
 #TippCorp{
@@ -97,7 +99,7 @@ input {
     height: 31px;
     background-color:transparent;
     color:white;
-    font-size :25px;
+    font-size :1vw;
     text-align : center;
 }
   

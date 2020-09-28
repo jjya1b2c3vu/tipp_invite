@@ -8,7 +8,7 @@ body{
     top: 0px;
     left: 0px;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 90%;
     width: 100%;
     height: auto;
     z-index: -1;
@@ -22,13 +22,13 @@ body{
 .left-side {
     position: fixed;
     font-family: SegoeUI;
-    font-size: 50px;
+    font-size: 2vw;
     font-weight: 600;
     text-align: left;
     color :#fdfdfd3d; 
 }
 .left-side p {
-    margin : 10px;  
+    margin : 0.4vw;  
     
 }
 .no_mark{
@@ -44,56 +44,62 @@ body{
 /* right side start */
 .right-side {
     display: grid;
-    grid-template-rows: 700px 700px 700px 700px 700px;
+    margin-left:7.81vw;
+    grid-template-rows: 1000px 1000px 1000px 1000px 1000px 1000px;
 }
 #right-side-0{
+    margin-top:5%;
     font-family: SegoeUI;
-    font-size: 45px;
+    font-size: 1.76vw;
     font-weight: 600;
     text-align : left;
 }
 #right-side-0 p{
-    margin : 10px;
-    margin-left: 450px;
+    margin : 0.4vw;
+    margin-left: 17.58vw;
 }
 
 #right-side-1{
+    margin-top:5%;
     font-family: SegoeUI;
-    font-size: 45px;
+    font-size: 1.76vw;
     font-weight: 600;
     text-align : left;
 }
 #right-side-1 p{
-    margin : 10px;
-    margin-left: 450px;
+    margin : 0.4vh;
+    margin-left: 17.58vw;
 }
 #right-side-2{
+    margin-top:5%;
     font-family: SegoeUI;
-    font-size: 45px;
+    font-size: 1.76vw;
     font-weight: 600;
     text-align : left;
 }
 #right-side-2 p{
-    margin : 10px;
-    margin-left: 450px;
+    margin : 0.4vw;
+    margin-left: 17.58vw;
 }
 #right-side-3{
+    margin-top:5%;
     font-family: SegoeUI;
-    font-size: 45px;
+    font-size: 1.76vw;
     font-weight: 600;
     text-align : left;
 }
 #right-side-3 p{
-    margin : 10px;
-    margin-left: 450px;
+    margin : 0.4vw;
+    margin-left: 17.58vw;
 }
 #right-side-4{
+    margin-top:5%;
     font-family: SegoeUI;
-    font-size: 400px;
+    font-size: 15.625vw;
     font-weight: 300;
     text-align : left;
 }
 #right-side-4 p{
-    margin : 10px;
-    margin-left: 450px;
+    margin : 0.4vw;
+    margin-left: 17.58vw;
 }
