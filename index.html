@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipp</title>
+    <script src="js\jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/new.css">
 </head>
 <body>
@@ -27,8 +28,7 @@
             <div class="g3_text" id="DATE">DATE<br><a>SEP. 28</a></div>
             <div class="g3_text" id="ENTER_CODE">ENTER CODE<br>
                 <form>
-                    <input type="password" id="pswd" maxlength="2"
-                     onkeydown="JavaScript:if(event.keyCode == 13)checkPswd();"/>
+                    <input type="password" name="pswd" id="pswd" maxlength="2"/>
                 </form>
             </div>
             <div class="g3_text" id="WITH">WITH<br><a id="TippCorp">Tipp Corp.</a></div>
@@ -36,7 +36,16 @@
         <div><hr id="l3" text-align="center"></div>
         
     </div>
-    
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("input[name=pswd]").keydown(function (key) {
+                if(key.keyCode == 13){//키가 13이면 실행 (엔터는 13)
+                    checkPswd();
+                }
+            });
+        });
+    </script> 
+    
 </body>
 </html>
