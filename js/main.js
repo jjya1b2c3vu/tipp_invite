@@ -3,7 +3,7 @@
 function checkPswd() { 
     var confirmPassword = "20"; 
     var password = document.getElementById("pswd").value; 
-    if (password == confirmPassword) { 
+    if (password === confirmPassword) { 
         alert("Passwords matched");
         window.location.href="tipp_invite/page.html";
     } 
