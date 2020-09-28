@@ -6,9 +6,9 @@ body{
     position: fixed;
     top: 0px;
     left: 0px;
-    min-width: 100%;
-    min-height: 90%;
-    width: 100%;
+    min-width: 100vw;
+    min-height: 0%;
+    width: 100vw;
     height: auto;
     z-index: -1;
     overflow: hidden;
@@ -32,6 +32,7 @@ body{
 }
 #l1 {
     border: solid 4px white; width: 44.5%;
+    text-align: right;
 }
 #l2 {
     margin-left : 0.78vw;
