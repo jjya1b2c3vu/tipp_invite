@@ -41,6 +41,7 @@
         $(document).ready(function(){
             $("input[name=pswd]").keydown(function (key) {
                 if(key.keyCode == 13){//키가 13이면 실행 (엔터는 13)
+                    event.preventDefault();
                     checkPswd();
                 }
             });
