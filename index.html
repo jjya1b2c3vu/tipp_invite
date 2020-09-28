@@ -28,7 +28,8 @@
             <div class="g3_text" id="DATE">DATE<br><a>SEP. 28</a></div>
             <div class="g3_text" id="ENTER_CODE">ENTER CODE<br>
                 <div>
-                    <input type="password" name="pswd" id="pswd" maxlength="2"/>
+                    <input onkeyup="enterkey();" type="text"  value="" />
+                    <!-- <input type="password" name="pswd" id="pswd" maxlength="2"/> -->
                 </div>
             </div>
             <div class="g3_text" id="WITH">WITH<br><a id="TippCorp">Tipp Corp.</a></div>
@@ -39,12 +40,13 @@
     <script src="js/main.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $("input[name=pswd]").keydown(function (key) {
-                if(key.keyCode == 13){//키가 13이면 실행 (엔터는 13)
-                    event.preventDefault();
-                    checkPswd();
-                }
-            });
+            $("#SEARCH_KEYWORD").keyup(function(e){if(e.keyCode == 13) checkPswd(); });
+            // $("input[name=pswd]").keydown(function (key) {
+            //     if(key.keyCode == 13){//키가 13이면 실행 (엔터는 13)
+            //         event.preventDefault();
+            //         checkPswd();
+            //     }
+            // });
         });
     </script> 
     
