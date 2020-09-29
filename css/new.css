@@ -107,7 +107,7 @@ input {
 @media screen and (max-width: 768px) {
 
     body{
-        margin-top: 20vh;
+        margin-top: 35vh;
     }
     #videobcg {
         position: fixed;
@@ -119,6 +119,94 @@ input {
         height: 0;
         z-index: -1;
         overflow: hidden;
+    }
+    .front {
+        position: relative;
+        margin-top: 12%; width: 100%;
+    }
+    .grid {
+        display: grid;
+        grid-template-rows: auto;
+    }
+    .grid1 {
+        margin-top : 5%; 
+        display: grid;
+        grid-template-columns: 1fr 30vw 1fr;
+    }
+    .line {
+        margin-top: 2.54vw;
+    }
+    #l1 {
+        border: solid 2px white; width: 29vw;
+        
+    }
+    #l2 {
+        margin-left : 0.78vw;
+        
+        border: solid 2px white; width: 29vw;
+    }
+    .ClassOf20 {
+        font-family: SegoeUI;
+        /* font-size: 100px; */
+        font-size: 5vw;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    .gird2{
+        margin-top :15.625vw;
+    }
+    .ambassadar {
+      font-family: SegoeUI;
+      /* font-size: 200px;  */
+      font-size: 13vw;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+    }
+    #l3 {
+        border: solid 2px white; width: 90vw;
+    }
+    .grid3 {
+        display: grid;
+        grid-template-columns: auto 15.625vw auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .g3_text {
+        font-family: SegoeUI;
+        font-size: 2.5vw;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.23;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;   
+    }
+    .grid3 a {
+        font-size: 2.5vw;
+        color: #ffffff;
+    }
+    #TippCorp{
+        color :#e9b545;
+    }
+    input {
+        width: 40px;
+        height: 25px;
+        background-color:transparent;
+        color:white;
+        font-size :4vw;
+        text-align : center;
     }
 
 }
